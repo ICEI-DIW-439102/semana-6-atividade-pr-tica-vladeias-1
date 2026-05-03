@@ -1,152 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C.S. Lewis | Vida e Obras</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.S. Lewis | Vida e Obras</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="header">
-        <div class="header__container">
-            <h1 class="logo">C.S. Lewis</h1>
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#biografia">Biografia</a></li>
-                    <li><a href="#obras">Obras</a></li>
-                    <li><a href="#newsletter">Contato</a></li>
-                </ul>
-            </nav>
+  <header class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand fw-bold" href="#inicio">C.S. Lewis</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#biografia">Biografia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#obras">Obras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#newsletter">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero text-light d-flex align-items-center" id="inicio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="fw-bold">Entre no universo de C.S. Lewis</h1>
+            <p class="lead">
+              Conheça a vida, as ideias e as principais obras do autor de
+              <strong>As Crônicas de Nárnia</strong>, uma das séries mais marcantes da literatura fantástica.
+            </p>
+            <a href="#obras" class="btn btn-warning">Explorar obras</a>
+          </div>
         </div>
-    </header>
-    <main>
-        <section class="hero" id="inicio">
-            <div class="hero__overlay">
-                <div class="hero__content">
-                    <h2>Entre no universo de C.S. Lewis</h2>
-                    <p>
-                        Conheça a vida, as ideias e as principais obras do autor de
-                        <strong>As Crônicas de Nárnia</strong>, uma das séries mais marcantes da literatura fantástica.
-                    </p>
-                    <a href="#obras" class="btn">Explorar obras</a>
-                </div>
+      </div>
+    </section>
+
+    <section class="container my-5" id="biografia">
+      <div class="text-center mb-4">
+        <h2>Biografia</h2>
+        <p>Um breve olhar sobre a trajetória do autor.</p>
+      </div>
+
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <img src="images/cs-lewis.jpg" alt="C.S. Lewis" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="col-md-7">
+          <p>
+            Clive Staples Lewis, conhecido como <strong>C.S. Lewis</strong>, foi um escritor,
+            professor e pensador britânico amplamente reconhecido por suas obras de fantasia,
+            apologética cristã e literatura acadêmica.
+          </p>
+          <p>
+            Entre seus trabalhos mais famosos estão <strong>As Crônicas de Nárnia</strong>,
+            <strong>Cristianismo Puro e Simples</strong> e <strong>Cartas de um Diabo a seu Aprendiz</strong>.
+            Seu legado permanece influente tanto na literatura quanto no pensamento cristão.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5" id="obras">
+      <div class="text-center mb-4">
+        <h2>Obras em destaque</h2>
+        <p>Alguns dos livros mais conhecidos de C.S. Lewis.</p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="images/narnia.jpg" class="card-img-top" alt="As Crônicas de Nárnia">
+            <div class="card-body">
+              <h5 class="card-title">As Crônicas de Nárnia</h5>
+              <p class="card-text">
+                Série de fantasia que apresenta um mundo mágico marcado por aventuras,
+                batalhas entre o bem e o mal e profundas simbologias.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section class="section about" id="biografia">
-            <div class="section__title">
-                <h2>Biografia</h2>
-                <p>Um breve olhar sobre a trajetória do autor.</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="images/puroesimple.jpg" class="card-img-top" alt="Cristianismo Puro e Simples Livro">
+            <div class="card-body">
+              <h5 class="card-title">Cristianismo Puro e Simples</h5>
+              <p class="card-text">
+                Uma das obras mais conhecidas de Lewis sobre a fé cristã, escrita com clareza,
+                lógica e linguagem acessível.
+              </p>
             </div>
+          </div>
+        </div>
 
-            <article class="about__content">
-                <div class="about__image">
-                    <img src="images/cs-lewis.jpg" alt="C.S. Lewis">
-                </div>
-
-                <div class="about__text">
-                    <p>
-                        Clive Staples Lewis, conhecido como <strong>C.S. Lewis</strong>, foi um escritor,
-                        professor e pensador britânico amplamente reconhecido por suas obras de fantasia,
-                        apologética cristã e literatura acadêmica.
-                    </p>
-                    <p>
-                        Entre seus trabalhos mais famosos estão <strong>As Crônicas de Nárnia</strong>,
-                        <strong>Cristianismo Puro e Simples</strong> e <strong>Cartas de um Diabo a seu Aprendiz</strong>.
-                        Seu legado permanece influente tanto na literatura quanto no pensamento cristão.
-                    </p>
-                </div>
-            </article>
-        </section>
-
-        <section class="section books" id="obras">
-            <div class="section__title">
-                <h2>Obras em destaque</h2>
-                <p>Alguns dos livros mais conhecidos de C.S. Lewis.</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="images/devilletters.jpeg" class="card-img-top" alt="Cartas de um Diabo a seu Aprendiz Livro">
+            <div class="card-body">
+              <h5 class="card-title">Cartas de um Diabo a seu Aprendiz</h5>
+              <p class="card-text">
+                Livro satírico e reflexivo em que Lewis explora tentações, virtudes e escolhas humanas
+                de forma criativa.
+              </p>
             </div>
+          </div>
+        </div>
 
-            <div class="books__grid">
-                <article class="card">
-                    <img src="images/narnia.jpg" alt="As Crônicas de Nárnia">
-                    <div class="card__content">
-                        <h3>As Crônicas de Nárnia</h3>
-                        <p>
-                            Série de fantasia que apresenta um mundo mágico marcado por aventuras,
-                            batalhas entre o bem e o mal e profundas simbologias.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/puroesimple.jpg" alt="Cristianismo Puro e Simples Livro">
-                    <div class="card__content">
-                        <h3>Cristianismo Puro e Simples</h3>
-                        <p>
-                            Uma das obras mais conhecidas de Lewis sobre a fé cristã, escrita com clareza,
-                            lógica e linguagem acessível.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/devilletters.jpeg" alt="Cartas de um Diabo a seu Aprendiz Livro">
-                    <div class="card__content">
-                        <h3>Cartas de um Diabo a seu Aprendiz</h3>
-                        <p>
-                            Livro satírico e reflexivo em que Lewis explora tentações, virtudes e escolhas humanas
-                            de forma criativa.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="images/problem.jpg" alt="O Problema do Sofrimento Livro">
-                    <div class="card__content">
-                        <h3>O Problema do Sofrimento</h3>
-                        <p>
-                            Obra em que o autor discute um dos temas mais profundos da experiência humana:
-                            a dor e seu significado.
-                        </p>
-                    </div>
-                </article>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow">
+            <img src="images/problem.jpg" class="card-img-top" alt="O Problema do Sofrimento Livro">
+            <div class="card-body">
+              <h5 class="card-title">O Problema do Sofrimento</h5>
+              <p class="card-text">
+                Obra em que o autor discute um dos temas mais profundos da experiência humana:
+                a dor e seu significado.
+              </p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section class="section quote">
-            <article class="quote__box">
-                <h2>Atmosfera de Nárnia</h2>
-                <p>
-                    Um visual inspirado em neve, realeza, floresta e mistério, refletindo a identidade
-                    fantástica das obras de C.S. Lewis.
-                </p>
-            </article>
-        </section>
+      </div>
+    </section>
 
-        <section class="section newsletter" id="newsletter">
-            <div class="section__title">
-                <h2>Receba novidades</h2>
-                <p>Preencha o formulário para acompanhar conteúdos sobre C.S. Lewis.</p>
-            </div>
+    <section class="bg-light py-5">
+      <div class="container">
+        <div class="p-4 rounded shadow text-center bg-white">
+          <h2>Atmosfera de Nárnia</h2>
+          <p>
+            Um visual inspirado em neve, realeza, floresta e mistério, refletindo a identidade
+            fantástica das obras de C.S. Lewis.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <form class="form">
-                <div class="form__group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-                </div>
+    <section class="container my-5" id="newsletter">
+      <div class="text-center mb-4">
+        <h2>Receba novidades</h2>
+        <p>Preencha o formulário para acompanhar conteúdos sobre C.S. Lewis.</p>
+      </div>
 
-                <div class="form__group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-                </div>
+      <form class="mx-auto" style="max-width: 600px;">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome">
+        </div>
 
-                <button type="submit" class="btn">Inscrever-se</button>
-            </form>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>Projeto acadêmico sobre C.S. Lewis | Desenvolvido em HTML e CSS</p>
-    </footer>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail">
+        </div>
+
+        <button type="submit" class="btn btn-warning">Inscrever-se</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark text-light text-center py-4">
+    <p>Projeto acadêmico sobre C.S. Lewis | Desenvolvido em HTML, CSS e Bootstrap</p>
+    <p>
+      <a href="#" class="text-warning">Instagram</a> |
+      <a href="#" class="text-warning">GitHub</a> |
+      <a href="#" class="text-warning">LinkedIn</a>
+    </p>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
